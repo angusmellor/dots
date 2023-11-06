@@ -1,0 +1,33 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = false
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❌](bold red)"
+
+[cmd_duration]
+min_time = 200
+show_milliseconds = true
+
+[golang]
+symbol = " "
+
+[nodejs]
+detect_extensions = []
+
+[git_metrics]
+disabled = false
+format = '(([ $added]($added_style)) ([ $deleted]($deleted_style)) )'
+only_nonzero_diffs = true
+
+[line_break]
+disabled = true
+
+[jobs]
+disabled = true
+
+[env_var.UpdatesPending]
+variable = 'UpdatesPending'
+format = '[$env_value]($style)'
+default = ''
+style = 'bold cyan'
